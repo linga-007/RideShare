@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 import { Rating } from 'react-simple-star-rating'
-import Map from './Map'
 
 import CarDetails from './CarDetails'
 import Transport from './Transport'
-
+import Map from './Map'
+import GooglemapApi from './GooglemapApi'
 export const DriverInfo = () => {
 
 
@@ -15,7 +15,9 @@ export const DriverInfo = () => {
                 <CarDetails/>
                 <Transport/>
             </div>
-            <Map/>
+            {/* <Map/> */}
+            <GooglemapApi/>
+            
             
 
         </div>
